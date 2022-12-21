@@ -5,10 +5,13 @@ Created on Thu Dec  8 20:16:05 2022
 
 @author: ayalo
 """
-
-import random
-import copy
+import os, random, copy, json
+from optparse import OptionParser
+import pandas as pd
 from collections import Counter
+
+parser = OptionParser()
+parser.add_option("-b")
 
 # List of employees
 employees = ["Natan", "Lyr", "Yotam", "Fares", "Mohammad", "Kostya", "Diogo", "Tiago"]
@@ -128,7 +131,15 @@ while(not available_employees):
             problematic_shifts.append(open_shift)
             break
 
-        
+# Serializing jsons
+schedule_json = json.dumps(schedule_copy, indent=4)
+shifts_json = json.dumps(shifts_copy, indent=4)
+
+# Writing to schedule.json
+with open("Schedule.json", "w") as outfile:
+    outfile.write(schedule_json)        
+with open("Shifts.json", "w") as outfile:
+    outfile.write(shifts_json)   
 
 # Print the schedule
 print("Employees schedule:")
