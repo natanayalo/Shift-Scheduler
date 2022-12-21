@@ -88,7 +88,7 @@ while(not available_employees and not bye):
         available_employees = [employee for employee in employees if problematic_shift not in rest_copy[employee]]
         
         if not available_employees:
-            print("Error, there is no employee available for {0} {1} shift".format(day,shift))
+            # print("Error, there is no employee available for {0} {1} shift".format(day,shift))
             failed = True
             break
         #add employee to this shift
@@ -100,7 +100,7 @@ while(not available_employees and not bye):
         block_shifts(employee, shift, day,rest_copy)
         shifts_copy[day][shifts.index(shift)] = employee
         weights_copy[employees.index(employee)] /= 100
-        print("problematic",employee, problematic_shift)
+        # print("problematic",employee, problematic_shift)
     
     if(failed):
         continue
@@ -122,10 +122,10 @@ while(not available_employees and not bye):
             block_shifts(employee, shift, day,rest_copy)
             shifts_copy[day][shifts.index(shift)] = employee
             weights_copy[employees.index(employee)] /= 100
-            print(employee, open_shift)
+            # print(employee, open_shift)
         else:
             #add employee to this shift and rerun withiut this shift in possible shifts
-            print("Adding",open_shift,"to Problematic shifts")
+            # print("Adding",open_shift,"to Problematic shifts")
             problematic_shifts.append(open_shift)
             bye = True
             break
