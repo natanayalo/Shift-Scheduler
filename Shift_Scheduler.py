@@ -69,9 +69,8 @@ def block_shifts(employee,shift,day,rest_copy):
             rest_copy[employee].append(rest)
         
 available_employees = None
-bye = False
 
-while(not available_employees and not bye):
+while(not available_employees):
     #copy the initial start for this attempt
     rest_copy = copy.deepcopy(restrictions)
     schedule_copy = copy.deepcopy(schedule)
@@ -127,7 +126,6 @@ while(not available_employees and not bye):
             #add employee to this shift and rerun withiut this shift in possible shifts
             # print("Adding",open_shift,"to Problematic shifts")
             problematic_shifts.append(open_shift)
-            bye = True
             break
 
         
