@@ -1,0 +1,37 @@
+{
+    "Sunday": [
+        "Lyr",
+        "Yotam",
+        "Diogo"
+    ],
+    "Monday": [
+        "Natan",
+        "Lyr",
+        "Mohammad"
+    ],
+    "Tuesday": [
+        "Natan",
+        "Fares",
+        "Kostya"
+    ],
+    "Wednesday": [
+        "Diogo",
+        "Tiago",
+        "Yotam"
+    ],
+    "Thursday": [
+        "Natan",
+        "Tiago",
+        "Lyr"
+    ],
+    "Friday": [
+        "Mohammad",
+        "Tiago",
+        "Fares"
+    ],
+    "Saturday": [
+        "Kostya",
+        "Mohammad",
+        "Tiago"
+    ]
+}

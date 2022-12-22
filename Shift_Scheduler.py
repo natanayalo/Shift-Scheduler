@@ -11,10 +11,13 @@ import pandas as pd
 from collections import Counter
 
 parser = OptionParser()
-parser.add_option("-b")
+parser.add_option("-b", "--build",
+                  dest = "restrictions",
+                  help = "Build a schedule from an Resriction input file",
+                  metavar = "restrictions")
 
 # List of employees
-employees = ["Natan", "Lyr", "Yotam", "Fares", "Mohammad", "Kostya", "Diogo", "Tiago"]
+# employees = ["Natan", "Lyr", "Yotam", "Fares", "Mohammad", "Kostya", "Diogo", "Tiago"]
 
 # List of shifts
 shifts = ["Morning", "Evening", "Night"]
@@ -22,8 +25,7 @@ shifts = ["Morning", "Evening", "Night"]
 # List of days
 days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-#probability list
-weights = [100000 for employee in employees]
+
 
 #detailed shift list
 open_shifts = []
@@ -31,17 +33,26 @@ for day in days:
     for shift in shifts:
         open_shifts.append(day+" "+shift)
         
-# Dictionary of restrictions
-restrictions = {
-    "Natan": ["Friday Evening", "Friday Night", "Saturday Morning", "Saturday Evening"],
-    "Lyr": ["Friday Evening", "Friday Night", "Saturday Morning", "Saturday Evening"],
-    "Yotam": ["Friday Evening", "Friday Night", "Saturday Morning", "Saturday Evening"],
-    "Fares": ["Friday Evening"],
-    "Mohammad": ["Friday Evening"],
-    "Kostya": ["Friday Evening"],
-    "Diogo": ["Friday Evening"],
-    "Tiago": []
-}
+#Script start
+(options, args) = parser.parse_args()
+
+#Save new Restrictions.json file
+if(options.restrictions):
+    # Serializing json
+    new_json = json.dumps(options.restrictions, indent=4)
+    # Writing to Restrictions.json
+    with open("Restrictions.json", "w") as outfile:
+        outfile.write(new_json)  
+        
+        
+# Load Dictionary of restrictions
+restrictions = json.load(open("Restrictions.json"))
+
+#get list of employees
+employees = list(restrictions.keys())
+
+#probability list
+weights = [100000 for employee in employees]
 
 
 # Flatten the list of restrictions into a single list

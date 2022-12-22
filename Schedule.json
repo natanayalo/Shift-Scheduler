@@ -1,0 +1,102 @@
+{
+    "Natan": [
+        [
+            "Monday",
+            "Morning"
+        ],
+        [
+            "Tuesday",
+            "Morning"
+        ],
+        [
+            "Thursday",
+            "Morning"
+        ]
+    ],
+    "Lyr": [
+        [
+            "Sunday",
+            "Morning"
+        ],
+        [
+            "Monday",
+            "Evening"
+        ],
+        [
+            "Thursday",
+            "Night"
+        ]
+    ],
+    "Yotam": [
+        [
+            "Sunday",
+            "Evening"
+        ],
+        [
+            "Wednesday",
+            "Night"
+        ]
+    ],
+    "Fares": [
+        [
+            "Friday",
+            "Night"
+        ],
+        [
+            "Tuesday",
+            "Evening"
+        ]
+    ],
+    "Mohammad": [
+        [
+            "Saturday",
+            "Evening"
+        ],
+        [
+            "Monday",
+            "Night"
+        ],
+        [
+            "Friday",
+            "Morning"
+        ]
+    ],
+    "Kostya": [
+        [
+            "Saturday",
+            "Morning"
+        ],
+        [
+            "Tuesday",
+            "Night"
+        ]
+    ],
+    "Diogo": [
+        [
+            "Sunday",
+            "Night"
+        ],
+        [
+            "Wednesday",
+            "Morning"
+        ]
+    ],
+    "Tiago": [
+        [
+            "Friday",
+            "Evening"
+        ],
+        [
+            "Wednesday",
+            "Evening"
+        ],
+        [
+            "Thursday",
+            "Evening"
+        ],
+        [
+            "Saturday",
+            "Night"
+        ]
+    ]
+}
