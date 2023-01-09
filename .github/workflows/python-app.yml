@@ -37,7 +37,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-    - name: Build
+    - name: run Scheduler
       run: |
         sh ./Shift_Scheduler.py
         echo
