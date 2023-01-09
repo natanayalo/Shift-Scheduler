@@ -16,5 +16,5 @@ jobs:
         echo
       
     - name: Run Script
-      run: python Shift-Scheduler.py
+      run: python Shift_Scheduler.py
       shell: sh
