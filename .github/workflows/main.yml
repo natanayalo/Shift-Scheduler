@@ -11,5 +11,5 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Run Script
-      run: python ./Shift-Scheduler.py
+      run: python Shift-Scheduler.py
       shell: sh
