@@ -2,21 +2,14 @@ name: Run Scheduler
 
 on: push
 
-env:
-  DEVOPS_DIR: devops
-
 jobs:
-  hello-world:
-    name: Hello world
+  Shcedule:
+    name: Scheduler
     runs-on: ubuntu-latest
     steps:
     - name: Check-out devops repository
       uses: actions/checkout@v2
-      with:
-        repository: jcdan3/devops
-        token: ${{ secrets.GITHUB_TOKEN }}
-        path: ${{ env.DEVOPS_DIR }}
-
+      
     - name: Run Script
       run: python ./Shift-Scheduler.py
       shell: sh
