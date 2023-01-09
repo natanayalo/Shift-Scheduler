@@ -9,6 +9,11 @@ jobs:
     steps:
     - name: Check-out devops repository
       uses: actions/checkout@v2
+    - name: Check pull
+      run: |
+        echo Directory content:
+        ls -a
+        echo
       
     - name: Run Script
       run: python Shift-Scheduler.py
