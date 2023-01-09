@@ -18,5 +18,5 @@ jobs:
         path: ${{ env.DEVOPS_DIR }}
 
     - name: Run Script
-      run: python ${{ env }}/Shift-Scheduler.py
+      run: python Shift-Scheduler.py
       shell: sh
