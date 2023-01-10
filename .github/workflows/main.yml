@@ -12,7 +12,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install PySimpleGUI
-        pip install tk
+        sudo apt-get install python3-tk
         echo Directory content:
         ls -a
         echo
