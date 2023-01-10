@@ -11,16 +11,9 @@ jobs:
       uses: actions/checkout@v2
     - name: Install dependencies
       run: |
-        pip install PySimpleGUI
-        sudo apt-get install python3-tk
-        echo Directory content:
-        ls -a
-        echo
+        pip install tabulate
       
     - name: Run Script
       run: python Shift_Scheduler.py
       shell: sh
       
-    - name: Run GUI
-      run: python Scheduler_GUI.py
-      shell: sh
