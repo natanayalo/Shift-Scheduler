@@ -18,3 +18,7 @@ jobs:
     - name: Run Script
       run: python Shift_Scheduler.py
       shell: sh
+      
+    - name: Run GUI
+      run: python Scheduler_GUI.py
+      shell: sh
