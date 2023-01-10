@@ -7,9 +7,9 @@ jobs:
     name: Scheduler
     runs-on: ubuntu-latest
     steps:
-    - name: Check-out devops repository
+    - name: Check-out Scheduler repository
       uses: actions/checkout@v2
-    - name: Check pull
+    - name: List directory content
       run: |
         echo Directory content:
         ls -a
