@@ -9,8 +9,9 @@ jobs:
     steps:
     - name: Check-out Scheduler repository
       uses: actions/checkout@v2
-    - name: List directory content
+    - name: Install dependencies
       run: |
+        pip install PySimpleGUI
         echo Directory content:
         ls -a
         echo
@@ -20,7 +21,5 @@ jobs:
       shell: sh
       
     - name: Run GUI
-      run: |
-        pip install PySimpleGUI 
-        python Scheduler_GUI.py
+      run: python Scheduler_GUI.py
       shell: sh
