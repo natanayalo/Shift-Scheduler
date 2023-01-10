@@ -12,6 +12,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install PySimpleGUI
+        pip install tkinter
         echo Directory content:
         ls -a
         echo
