@@ -7,7 +7,6 @@ Created on Thu Dec  8 20:16:05 2022
 """
 import os, random, copy, json
 from optparse import OptionParser
-import pandas as pd
 from collections import Counter
 
 parser = OptionParser()
