@@ -20,5 +20,7 @@ jobs:
       shell: sh
       
     - name: Run GUI
-      run: python Scheduler_GUI.py
+      run: |
+        pip install PySimpleGUI 
+        python Scheduler_GUI.py
       shell: sh
