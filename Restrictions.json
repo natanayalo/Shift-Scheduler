@@ -1,33 +1,30 @@
 {
-    "Natan": [
+    "Diogo Soares": [
+        "Saturday Night",
+        "Sunday Morning",
+        "Sunday Evening",
+        "Sunday Night",
+        "Monday Night",
+        "Monday Evening"
+    ],
+    "Lyr Ita": [
+        "Monday Night",
+        "Tuesday Morning",
+        "Tuesday Evening",
+        "Tuesday Night",
+        "Wednesday Morning",
+        "Wednesday Evening",
+        "Wednesday Night",
+        "Thursday Morning",
+        "Thursday Evening",
+        "Thursday Night",
+        "Friday Morning",
         "Friday Evening",
         "Friday Night",
         "Saturday Morning",
-        "Saturday Evening"
-    ],
-    "Lyr": [
-        "Friday Evening",
-        "Friday Night",
-        "Saturday Morning",
-        "Saturday Evening"
-    ],
-    "Yotam": [
-        "Friday Evening",
-        "Friday Night",
-        "Saturday Morning",
-        "Saturday Evening"
-    ],
-    "Fares": [
-        "Friday Evening"
-    ],
-    "Mohammad": [
-        "Friday Evening"
-    ],
-    "Kostya": [
-        "Friday Evening"
-    ],
-    "Diogo": [
-        "Friday Evening"
-    ],
-    "Tiago": []
+        "Saturday Evening",
+        "Sunday Evening",
+        "Sunday Night",
+        "Monday Evening"
+    ]
 }
