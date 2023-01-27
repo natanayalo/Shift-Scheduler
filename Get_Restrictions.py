@@ -7,7 +7,7 @@ Created on Tue Jan 24 13:15:16 2023
 """
 
 import os, json
-
+from dotenv import dotenv_values
 from selenium import webdriver
 
 chrome_options = webdriver.chrome.options.Options()
@@ -34,9 +34,12 @@ passwordTextBox = driver.find_element(webdriver.common.by.By.ID, "ctl00_ContentP
 userNameTextBox.clear()
 passwordTextBox.clear()
 
+USARNAME = os.getenv("USARNAME")
+PASSWORD = os.getenv("PASSWORD")
+
 #Set the fill boxes of username and password on TimeTable
-userNameTextBox.send_keys("natan.ayalo@dynamicyield.com")
-passwordTextBox.send_keys("Ayalo461")
+userNameTextBox.send_keys(USERNAME)
+passwordTextBox.send_keys(PASSWORD)
 passwordTextBox.send_keys(webdriver.common.keys.Keys.RETURN)
 
 driver.implicitly_wait(20)
