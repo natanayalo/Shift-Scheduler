@@ -12,8 +12,11 @@ jobs:
     - name: Install dependencies
       run: |
         pip install tabulate
+        pip install selenium
       
     - name: Run Script
-      run: python Shift_Scheduler.py
+      run: |
+        python Get_Restrictions.py
+        python Shift_Scheduler.py
       shell: sh
       
